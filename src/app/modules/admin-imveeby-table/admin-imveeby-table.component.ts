@@ -9,19 +9,19 @@ import { AdminImveebyService } from 'src/app/services/admin-imveeby.service';
 })
 export class AdminImveebyTableComponent implements OnInit {
 
-  public dataToDo: Array<any> = [];
+  // public dataToDo: Array<any> = [];
 
   constructor(
-    private adminImveebySvc: AdminImveebyService,
+    // private adminImveebySvc: AdminImveebyService,
     // private routerSvc: Router,
   ) { }
 
   ngOnInit(): void {
-    const parameter = '/todo'
-    this.adminImveebySvc.getData(parameter).subscribe((response)=> {
-      this.dataToDo = response['data'];
-      console.log('dataToDo', this.dataToDo);
-    });
+    // const parameter = '/todo'
+    // this.adminImveebySvc.getData(parameter).subscribe((response)=> {
+    //   this.dataToDo = response['data'];
+    //   console.log('dataToDo', this.dataToDo);
+    // });
   }
 
   public onButtonCreateClicked() {
